@@ -27,3 +27,27 @@ console.log(typeof myFunction);
 
 // typeof null = object
 
+
+
+//   MEMORY
+
+// stack(primitive) & Heap(Non-primitive)
+
+let myName = "Ankit Chaurasiya"
+let anotherName = myName
+anotherName = "Chaurasiya"
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    name: "Ankit",
+    age: 20,
+    Email: "ankit@google.com",
+}
+
+let userTwo = userOne
+userTwo.Email = "ankit1@google.com"
+
+console.log(userOne.Email);
+console.log(userTwo.Email);
