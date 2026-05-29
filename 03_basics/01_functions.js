@@ -20,5 +20,26 @@ function loginUserMessage(username = "Ankit"){
     return `${username} just loggedIn`
 }
 
-console.log(loginUserMessage("ankit"));
-console.log(loginUserMessage());
+// console.log(loginUserMessage("ankit"));
+// console.log(loginUserMessage());
+
+
+function calculateCartPrice(value1, value2, ...num){     /// ... is rest operator
+    return num;
+}
+console.log(calculateCartPrice(100, 200, 300, 400, 500));
+
+const user = {
+    name: "Ankit",
+    price: 400,
+}
+function handleuser(anotheruser){
+     console.log(anotheruser.name);
+     console.log(anotheruser.price);
+}
+
+// handleuser(user)
+handleuser({
+    name: "Ankit",
+    price: 400
+})
