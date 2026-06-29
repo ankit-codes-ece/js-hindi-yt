@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <script>
+
+        // lexical scoping
+
+        function inti(){
+            let name = "Ankit"
+            function user(){
+                console.log(name)
+            }
+            user()
+        }
+        inti()
+        
+
+        function makefun(){
+            username = "aman"
+
+            function print(){
+                console.log(username)
+            }
+            return print   /// here it will return the whole lexical scope
+        }
+
+        const myfun =  makefun()
+
+        myfun()
+
+    </script>
+</body>
+</html>
