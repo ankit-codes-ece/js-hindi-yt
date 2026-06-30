@@ -29,6 +29,7 @@ function User(username, loginCount, isLoggedIn){
     }
 
     return this  // here we dont need to use return it is implicitly defined
+    // if we dont use new then it will return the global object
     
 }
 
